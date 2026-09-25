@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEON SURVIVAL — manual no oficial para sobrevivir a la vida moderna.">
+  <title>NEON SURVIVAL // ¿Estás sobreviviendo o improvisando?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#">NEON<span>//</span>SURVIVAL</a>
+    <nav>
+      <a href="#tests">Tests</a>
+      <a href="#manual">Manual</a>
+      <a href="#ranking">Ranking</a>
+    </nav>
+    <button class="mini-btn" id="panicBtn">MODO PÁNICO</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PROTOCOLO HUMANO v2.0</p>
+        <h1>¿ESTÁS<br><span>SOBREVIVIENDO</span><br>O IMPROVISANDO?</h1>
+        <p class="hero-text">
+          Una web innecesariamente seria para problemas absolutamente innecesarios.
+          Tests, rankings y sabiduría callejera para gente que abrió 17 pestañas y no sabe por qué.
+        </p>
+        <div class="hero-actions">
+          <a class="cta" href="#tests">PONME A PRUEBA <span>→</span></a>
+          <button class="ghost" id="randomBtn">SORPRÉNDEME</button>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-head"><span></span><span></span><span></span><b>life.exe</b></div>
+        <div class="terminal-body">
+          <p>> iniciando vida...</p>
+          <p>> café detectado: <strong>SÍ</strong></p>
+          <p>> ganas de madrugar: <strong>ERROR 404</strong></p>
+          <p>> dinero restante: <strong id="money">17.42€</strong></p>
+          <p>> dignidad: <strong>calculando...</strong></p>
+          <p class="cursor">█</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div>⚠ NOTICIA DE ÚLTIMA HORA: SIGUES SIN SABER QUÉ HACER CON TU VIDA • TU WIFI FUNCIONA Y NO SABES POR QUÉ • 23:47 Y MAÑANA HAY QUE MADRUGAR •</div>
+    </section>
+
+    <section class="section" id="tests">
+      <div class="section-title">
+        <p class="eyebrow">01 // DIAGNÓSTICO</p>
+        <h2>TESTS QUE NO<br>PIDIÓ NADIE</h2>
+      </div>
+
+      <div class="quiz-card">
+        <div class="quiz-top">
+          <span>TEST #001</span>
+          <span id="questionNumber">1 / 5</span>
+        </div>
+        <h3 id="question">Te dicen: "Haz lo que quieras". ¿Qué haces?</h3>
+        <div id="answers" class="answers"></div>
+        <div class="progress"><div id="progress"></div></div>
+      </div>
+    </section>
+
+    <section class="section split" id="manual">
+      <div>
+        <p class="eyebrow">02 // MANUAL</p>
+        <h2>PEQUEÑOS<br>PROBLEMAS.<br>GRANDES<br>DRAMAS.</h2>
+      </div>
+      <div class="cards">
+        <article class="info-card">
+          <span class="card-num">01</span>
+          <h3>EL "YA VOY"</h3>
+          <p>Traducción oficial: todavía estoy en la cama, pero quiero que pienses que estoy en camino.</p>
+          <button class="tip" data-tip="No salgas 20 minutos después de decir 'ya voy'. Es ciencia.">VER SABIDURÍA</button>
+        </article>
+        <article class="info-card">
+          <span class="card-num">02</span>
+          <h3>EL GRUPO DE 47</h3>
+          <p>27 personas han visto el mensaje. 0 han contestado. Alguien está escribiendo desde 2019.</p>
+          <button class="tip" data-tip="Si dices 'chicos una cosa' y nadie responde, acepta tu destino.">VER SABIDURÍA</button>
+        </article>
+        <article class="info-card">
+          <span class="card-num">03</span>
+          <h3>EL "MAÑANA"</h3>
+          <p>Unidad temporal ficticia usada para posponer tareas hasta que se convierten en una emergencia.</p>
+          <button class="tip" data-tip="Mañana empieza a existir cuando la entrega es en 3 horas.">VER SABIDURÍA</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section ranking-section" id="ranking">
+      <div class="section-title">
+        <p class="eyebrow">03 // CLASIFICACIÓN CIENTÍFICA</p>
+        <h2>RANKING DE<br>ENERGÍAS SOSPECHOSAS</h2>
+      </div>
+      <div class="ranking">
+        <div><b>01</b><span>Decir "me da igual" y luego opinar durante 40 minutos</span><strong>98%</strong></div>
+        <div><b>02</b><span>Abrir la nevera 4 veces esperando que aparezca comida nueva</span><strong>94%</strong></div>
+        <div><b>03</b><span>Mirar el saldo antes de pedir comida y pedirla igualmente</span><strong>91%</strong></div>
+        <div><b>04</b><span>Responder "JAJA" sin haber entendido el meme</span><strong>87%</strong></div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <p class="eyebrow">SISTEMA OPERATIVO: MÁS O MENOS FUNCIONAL</p>
+      <h2>NO TENEMOS<br>LAS RESPUESTAS.</h2>
+      <p>Pero tenemos una web bastante guapa para fingir que sí.</p>
+      <button class="cta" id="shareBtn">GENERAR MI DIAGNÓSTICO <span>↗</span></button>
+      <p id="shareResult" class="share-result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>NEON//SURVIVAL © 2026</span>
+    <span>HECHO CON CAFÉ, CSS Y DECISIONES CUESTIONABLES.</span>
+  </footer>
+
+  <div class="panic-overlay" id="panicOverlay">
+    <div>
+      <span>⚠</span>
+      <h2>TRANQUILO.</h2>
+      <p>No ha pasado nada.</p>
+      <button class="cta" id="closePanic">VOLVER A LA REALIDAD</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
